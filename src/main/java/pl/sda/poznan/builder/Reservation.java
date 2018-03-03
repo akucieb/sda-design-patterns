@@ -1,10 +1,10 @@
 package pl.sda.poznan.builder;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Reservation {
 
-    private LocalDateTime date;
+    private LocalDate date;
     private int headcount;
     private String city;
     private double price;
@@ -12,7 +12,7 @@ public class Reservation {
     private Reservation() {
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
@@ -33,12 +33,12 @@ public class Reservation {
     }
 
     public static class ReservationBuilder{
-        private LocalDateTime date;
+        private LocalDate date;
         private int headcount;
         private String city;
         private double price;
 
-        public ReservationBuilder date(LocalDateTime val){
+        public ReservationBuilder date(LocalDate val){
             this.date = val;
             return this;
         }
