@@ -6,6 +6,9 @@ public class Employee {
     private String email;
     private double salary;
 
+    public Employee() {
+    }
+
     public String getName() {
         return name;
     }
